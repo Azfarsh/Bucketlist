@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bucket List</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .subtitle {
+            color: #7f8c8d;
+            font-size: 1.1rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .bucket-list {
+            background-color: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .list-category {
+            margin-bottom: 2rem;
+        }
+
+        .category-title {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #3498db;
+        }
+
+        .bucket-items {
+            list-style: none;
+        }
+
+        .bucket-items li {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            margin: 0.5rem 0;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .bucket-items li:hover {
+            transform: translateX(10px);
+            background-color: #e9ecef;
+            cursor: pointer;
+        }
+
+        .bucket-items li i {
+            margin-right: 1rem;
+            color: #3498db;
+        }
+
+        .completed {
+            text-decoration: line-through;
+            opacity: 0.7;
+        }
+
+        .completed i {
+            color: #27ae60 !important;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #7f8c8d;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            header, .bucket-list {
+                padding: 1rem;
+            }
+
+            .bucket-items li {
+                padding: 0.8rem;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Bucket List</h1>
+            <p class="subtitle">Dreams worth chasing, adventures worth taking</p>
+        </header>
+
+        <main class="bucket-list">
+            <section class="list-category">
+                <h2 class="category-title">Travel Adventures</h2>
+                <ul class="bucket-items">
+                    <li class="completed"><i class="fas fa-check-circle"></i>Visit the Northern Lights in Iceland</li>
+                    <li><i class="far fa-circle"></i>Hike the Machu Picchu Trail</li>
+                    <li><i class="far fa-circle"></i>Explore the Great Barrier Reef</li>
+                    <li class="completed"><i class="fas fa-check-circle"></i>Walk on the Great Wall of China</li>
+                </ul>
+            </section>
+
+            <section class="list-category">
+                <h2 class="category-title">Personal Growth</h2>
+                <ul class="bucket-items">
+                    <li class="completed"><i class="fas fa-check-circle"></i>Learn a New Language</li>
+                    <li><i class="far fa-circle"></i>Run a Marathon</li>
+                    <li><i class="far fa-circle"></i>Write a Book</li>
+                    <li><i class="far fa-circle"></i>Start a Successful Business</li>
+                </ul>
+            </section>
+
+            <section class="list-category">
+                <h2 class="category-title">Skills to Master</h2>
+                <ul class="bucket-items">
+                    <li><i class="far fa-circle"></i>Master Photography</li>
+                    <li class="completed"><i class="fas fa-check-circle"></i>Learn to Play Guitar</li>
+                    <li><i class="far fa-circle"></i>Become a Master Chef</li>
+                    <li><i class="far fa-circle"></i>Learn to Surf</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <p>Life is short. Dream big, work hard, and make it happen! ✨</p>
+        </footer>
+    </div>
+</body>
+</html>
